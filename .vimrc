@@ -31,19 +31,14 @@ Bundle 'vundle'
 "例
 "Bundle 'プラグイン名'
 
-Bundle 'Shougo/neocomplcache'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'petdance/vim-perl'
 Bundle 'hotchpotch/perldoc-vim'
 Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neocomplcache-snippets-complete'
 Bundle 'thinca/vim-quickrun'
 Bundle 'scrooloose/syntastic'
 
-
-"neocomplcache の設定
-let g:neocomplcache_enable_at_startup = 1
 
 "矢印キー無効になってしまったので対策
 if !has('gui_running')
