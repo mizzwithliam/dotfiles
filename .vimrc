@@ -5,7 +5,6 @@ set showmode
 set title
 set ruler
 set showcmd
-set showmatch
 set laststatus=2
 set smartindent
 set expandtab
@@ -17,6 +16,18 @@ set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 "改行やタブなどの空白を表示する
 "set list
 "set listchars=eol:¬,tab:->
+
+"括弧やクォーテーションを補完する
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+vnoremap { "zdi{<C-R>z}<ESC>
+vnoremap [ "zdi[<C-R>z]<ESC>
+vnoremap ( "zdi(<C-R>z)<ESC>
+vnoremap " "zdi"<C-R>z"<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
 
 "スワップファイルを作らない設定
 set noswapfile 
