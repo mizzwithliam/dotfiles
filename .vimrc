@@ -23,7 +23,6 @@ inoremap [ []<LEFT>
 inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-vnoremap { "zdi{<C-R>z}<ESC>
 vnoremap [ "zdi[<C-R>z]<ESC>
 vnoremap ( "zdi(<C-R>z)<ESC>
 vnoremap " "zdi"<C-R>z"<ESC>
@@ -49,7 +48,7 @@ Bundle 'hotchpotch/perldoc-vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'thinca/vim-quickrun'
 Bundle 'scrooloose/syntastic'
-
+Bundle 'Shougo/neocomplcache'
 
 "矢印キー無効になってしまったので対策
 if !has('gui_running')
