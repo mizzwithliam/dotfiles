@@ -1,3 +1,22 @@
+"vundle設定（プラグイン一括管理）
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+"：BundleCleanコマンドで消されないための対策。
+Bundle 'vundle'
+
+"他のプラグインはこれより下に書き込むこと。
+"例
+"Bundle 'プラグイン名'
+
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'petdance/vim-perl'
+Bundle 'hotchpotch/perldoc-vim'
+Bundle 'Shougo/neocomplcache'
+Bundle 'thinca/vim-quickrun'
+Bundle 'scrooloose/syntastic'
+Bundle 'Shougo/neocomplcache'
+
 syntax on
 set number
 set cursorline
@@ -29,27 +48,7 @@ vnoremap " "zdi"<C-R>z"<ESC>
 vnoremap ' "zdi'<C-R>z'<ESC>
 
 "スワップファイルを作らない設定
-set noswapfile 
-
-"vundle設定（プラグイン一括管理）
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-"：BundleCleanコマンドで消されないための対策。
-Bundle 'vundle'
-
-"他のプラグインはこれより下に書き込むこと。
-"例
-"Bundle 'プラグイン名'
-
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'petdance/vim-perl'
-Bundle 'hotchpotch/perldoc-vim'
-Bundle 'Shougo/neocomplcache'
-Bundle 'thinca/vim-quickrun'
-Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/neocomplcache-snippets-complete'
+set noswapfile
 
 "矢印キー無効になってしまったので対策
 if !has('gui_running')
