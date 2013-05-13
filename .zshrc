@@ -39,3 +39,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH
+export MOBA_DIR=/home/moba:$MOBA_DIR 
