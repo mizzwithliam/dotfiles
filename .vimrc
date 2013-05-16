@@ -31,6 +31,7 @@ set ts=4 sw=4 sts=0
 colorscheme jellybeans
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
+set backspace=indent,eol,start
 
 "改行やタブなどの空白を表示する
 "set list
@@ -95,3 +96,7 @@ endif
     " for snippets
     imap <expr><C-k> neocomplcache#sources#snippets_complete#expandable() ? "\<Plug>(neocomplcache_snippets_expand)" : "\<C-n>"
     smap <C-k> <Plug>(neocomplcache_snippets_expand)
+
+" キーバインドの変更
+imap <C-j> <ESC>
+vmap <C-j> <ESC>
