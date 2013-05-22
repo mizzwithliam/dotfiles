@@ -20,6 +20,7 @@ Bundle 'Shougo/neocomplcache'
 syntax on
 set number
 set cursorline
+set cursorcolumn
 set showmode
 set title
 set ruler
