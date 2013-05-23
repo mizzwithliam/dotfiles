@@ -103,4 +103,4 @@ endif
 " キーバインドの変更
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
-nmap <C-[> :NERDTreeToggle
+nmap <F1> :NERDTreeToggle
