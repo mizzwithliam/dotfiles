@@ -17,6 +17,7 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'thinca/vim-quickrun'
 Bundle 'scrooloose/syntastic'
 Bundle 'Shougo/neocomplcache'
+Bundle 'scrooloose/nerdtree.git'
 
 syntax on
 set number
@@ -102,3 +103,4 @@ endif
 " キーバインドの変更
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
+nmap <C-[> :NERDTreeToggle

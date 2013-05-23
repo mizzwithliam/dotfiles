@@ -11,9 +11,11 @@ ZSH_THEME="sunrise"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -l"
+alias gp="git pull origin"
 alias gaa="git add ."
 alias gcm="git commit -m"
 alias gpu="git push"
+alias ctags='/usr/bin/ctags'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
