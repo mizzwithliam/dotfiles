@@ -1,23 +1,32 @@
-"vundle設定（プラグイン一括管理）
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-"：BundleCleanコマンドで消されないための対策。
-Bundle 'vundle'
+set nocompatible               " Be iMproved
 
-"他のプラグインはこれより下に書き込むこと。
-"例
-"Bundle 'プラグイン名'
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-Bundle 'w0ng/vim-hybrid.git'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'petdance/vim-perl'
-Bundle 'hotchpotch/perldoc-vim'
-Bundle 'Shougo/neocomplcache'
-Bundle 'thinca/vim-quickrun'
-Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplcache'
-Bundle 'scrooloose/nerdtree.git'
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+" Recommended to install
+" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
+NeoBundle 'Shougo/vimproc'
+
+NeoBundle 'w0ng/vim-hybrid.git'
+NeoBundle 'vim-scripts/Lucius'
+NeoBundle 'vim-scripts/Zenburn'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'petdance/vim-perl'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'hotchpotch/perldoc-vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'scrooloose/nerdtree.git'
+NeoBundle 'Lokaltog/vim-powerline'
 
 syntax on
 set number
@@ -31,7 +40,7 @@ set laststatus=2
 set smartindent
 set expandtab
 set ts=4 sw=4 sts=0
-colorscheme hybrid 
+colorscheme hybrid
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 set backspace=indent,eol,start
