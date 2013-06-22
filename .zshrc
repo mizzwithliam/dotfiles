@@ -16,6 +16,10 @@ alias gaa="git add ."
 alias gcm="git commit -m"
 alias gpu="git push"
 alias ctags='/usr/bin/ctags'
+alias httpdre='sudo /etc/init.d/httpd restart'
+alias httpdstop='sudo /etc/init.d/httpd stop'
+alias httpdstart='sudo /etc/init.d/httpd start'
+alias mysqld='sudo /etc/init.d/mysqld restart'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -41,4 +45,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH
-export MOBA_DIR=~/production/mobasif 
+export MOBA_DIR=~/mizuhiro-kio/work/mobasif 

@@ -27,6 +27,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'szw/vim-tags'
 
 syntax on
 set number
@@ -113,3 +114,8 @@ endif
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
 nmap <F1> :NERDTreeToggle
+" tagsジャンプの時に複数ある時は一覧表示                                        
+nnoremap <C-]> g<C-]>
+
+" vim-tags
+au BufNewFile,BufRead *.pm let g:vim_tags_project_tags_command = "ctags --languages=php -f ~/pm.tags `pwd` 2>/dev/null &"
