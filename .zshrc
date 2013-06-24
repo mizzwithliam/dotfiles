@@ -19,7 +19,9 @@ alias ctags='/usr/bin/ctags'
 alias httpdre='sudo /etc/init.d/httpd restart'
 alias httpdstop='sudo /etc/init.d/httpd stop'
 alias httpdstart='sudo /etc/init.d/httpd start'
-alias mysqld='sudo /etc/init.d/mysqld restart'
+alias mysqldre='sudo /etc/init.d/mysqld restart'
+alias mobatcsp='~/mizuhiro-kio/work/mobasif/script/tool/compile_smart' 
+alias mobatcfp='~/mizuhiro-kio/work/mobasif/script/tool/compile_template'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
