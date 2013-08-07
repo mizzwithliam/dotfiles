@@ -28,6 +28,12 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'szw/vim-tags'
+NeoBundle 'jpo/vim-railscasts-theme'
+NeoBundle 'jeffreyiacono/vim-colors-wombat'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'therubymug/vim-pyte.git'
+NeoBundle 'vim-scripts/newspaper.vim'
 
 syntax on
 set number
