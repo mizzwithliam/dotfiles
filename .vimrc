@@ -34,6 +34,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'therubymug/vim-pyte.git'
 NeoBundle 'vim-scripts/newspaper.vim'
+NeoBundle 'Shougo/vimfiler'
 
 syntax on
 set number
