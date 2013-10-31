@@ -48,14 +48,19 @@ set laststatus=2
 set smartindent
 set expandtab
 set ts=4 sw=4 sts=0
-colorscheme hybrid 
+colorscheme hybrid
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 set backspace=indent,eol,start
 
 "改行やタブなどの空白を表示する
-"set list
-"set listchars=eol:¬,tab:->
+set list
+set listchars=tab:->
+augroup HighlightTrailingSpaces
+    autocmd!
+    autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+    autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
+augroup END
 
 "括弧やクォーテーションを補完する
 inoremap { {}<LEFT>
@@ -121,7 +126,7 @@ endif
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
 nmap <F1> :NERDTreeToggle
-" tagsジャンプの時に複数ある時は一覧表示                                        
+" tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
 
 " vim-tags
