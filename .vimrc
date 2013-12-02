@@ -1,4 +1,8 @@
-set nocompatible               " Be iMproved
+set nocompatible
+filetype off 
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -36,6 +40,8 @@ NeoBundle 'therubymug/vim-pyte.git'
 NeoBundle 'vim-scripts/newspaper.vim'
 NeoBundle 'Shougo/vimfiler'
 
+NeoBundleCheck
+
 syntax on
 set number
 set cursorline
@@ -48,7 +54,7 @@ set laststatus=2
 set smartindent
 set expandtab
 set ts=4 sw=4 sts=0
-colorscheme hybrid
+colorscheme jellybeans
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 set backspace=indent,eol,start
@@ -131,3 +137,5 @@ nnoremap <C-]> g<C-]>
 
 " vim-tags
 au BufNewFile,BufRead *.pm let g:vim_tags_project_tags_command = "ctags --languages=php -f ~/pm.tags `pwd` 2>/dev/null &"
+
+filetype plugin indent on

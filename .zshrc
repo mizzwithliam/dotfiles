@@ -21,11 +21,7 @@ alias httpdre='sudo /etc/init.d/httpd restart'
 alias httpdstop='sudo /etc/init.d/httpd stop'
 alias httpdstart='sudo /etc/init.d/httpd start'
 alias mysqldre='sudo /etc/init.d/mysqld restart'
-alias mobatcsp='~/mizuhiro-kio/work/mobasif/script/tool/compile_smart' 
-alias mobatcfp='~/mizuhiro-kio/work/mobasif/script/tool/compile_template'
-alias cdsimu='cd /Users/mizuhiro.kio/ngcore-sdk-1.11.3.2-20130911-g8aab1d1/SDK/iOS/Release-iphonesimulator'
-alias cdsimuconf='cd Contents/Resources/EmbeddedApp/webgame.app'
-alias cdbbc='cd /Users/mizuhiro.kio/ngcore-sdk-1.11.3.2-20130911-g8aab1d1/SDK/Apps/BloodBrothers'
+alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
