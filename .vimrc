@@ -39,6 +39,13 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'therubymug/vim-pyte.git'
 NeoBundle 'vim-scripts/newspaper.vim'
 NeoBundle 'Shougo/vimfiler'
+NeoBundle 'cocopon/iceberg.vim'
+NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'tpope/vim-surround.git'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'vim-scripts/twilight.git'
+NeoBundle 'chriskempson/tomorrow-theme.git'
 
 NeoBundleCheck
 
@@ -54,7 +61,7 @@ set laststatus=2
 set smartindent
 set expandtab
 set ts=4 sw=4 sts=0
-colorscheme jellybeans
+colorscheme hybrid 
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 set backspace=indent,eol,start
