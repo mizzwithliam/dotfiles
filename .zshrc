@@ -23,6 +23,9 @@ alias cdquiz='cd ~/marica-quiz'
 alias cdam='cd ~/Desktop/teambio_b/'
 alias sshmy='ssh -A game@gwdev6234.svr.mbga.local'
 alias sshquiz='ssh -A game@gwdev6147'
+alias scls='screen -ls'
+alias scr='screen -r'
+alias scd='screen -d'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

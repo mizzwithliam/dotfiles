@@ -39,6 +39,14 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'therubymug/vim-pyte.git'
 NeoBundle 'vim-scripts/newspaper.vim'
 NeoBundle 'Shougo/vimfiler'
+NeoBundle 'cocopon/iceberg.vim'
+NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'tpope/vim-surround.git'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'vim-scripts/twilight.git'
+NeoBundle 'chriskempson/tomorrow-theme.git'
+NeoBundle 'Twinside/vim-codeoverview'
 
 NeoBundleCheck
 
@@ -131,11 +139,17 @@ endif
 " キーバインドの変更
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
-nmap <F1> :NERDTreeToggle
+nmap <F1> :VimFiler
+" スクロール可能にする
+set mouse=a
 " tagsジャンプの時に複数ある時は一覧表示
 nnoremap <C-]> g<C-]>
 
 " vim-tags
 au BufNewFile,BufRead *.pm let g:vim_tags_project_tags_command = "ctags --languages=php -f ~/pm.tags `pwd` 2>/dev/null &"
+
+" vimfilerを起動時に立ち上げる
+autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
+"let g:vimfiler_as_default_explorer = 1
 
 filetype plugin indent on
