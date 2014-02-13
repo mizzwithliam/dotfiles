@@ -11,19 +11,22 @@ ZSH_THEME="sunrise"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -l"
-alias gp="git pull origin"
+alias gp="git pull"
 alias gaa="git add ."
-alias gcm="git commit -m"
+alias gc="git commit"
 alias gpu="git push"
-alias gs="git status"
+alias gs='git status'
 alias ctags='/usr/bin/ctags'
 alias ctagsmac='/usr/local/Cellar/ctags/5.8/bin/ctags'
-alias httpdre='sudo /etc/init.d/httpd restart'
-alias httpdstop='sudo /etc/init.d/httpd stop'
-alias httpdstart='sudo /etc/init.d/httpd start'
-alias mysqldre='sudo /etc/init.d/mysqld restart'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
 alias sshghost='ssh -i ghost.pem ec2-user@54.199.138.50'
+alias cdquiz='cd ~/marica-quiz'
+alias cdam='cd ~/Desktop/teambio_b/'
+alias sshmy='ssh -A game@gwdev6234.svr.mbga.local'
+alias sshquiz='ssh -A game@gwdev6147'
+alias scls='screen -ls'
+alias scr='screen -r'
+alias scd='screen -d'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -50,3 +53,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH
 export MOBA_DIR=~/mizuhiro-kio/work/mobasif 
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
