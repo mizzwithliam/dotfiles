@@ -15,6 +15,7 @@ alias gp="git pull origin"
 alias gaa="git add ."
 alias gcm="git commit -m"
 alias gpu="git push"
+alias gs="git status"
 alias ctags='/usr/bin/ctags'
 alias ctagsmac='/usr/local/Cellar/ctags/5.8/bin/ctags'
 alias httpdre='sudo /etc/init.d/httpd restart'
@@ -22,6 +23,7 @@ alias httpdstop='sudo /etc/init.d/httpd stop'
 alias httpdstart='sudo /etc/init.d/httpd start'
 alias mysqldre='sudo /etc/init.d/mysqld restart'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
+alias sshghost='ssh -i ghost.pem ec2-user@54.199.138.50'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
