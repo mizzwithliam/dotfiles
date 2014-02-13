@@ -22,6 +22,9 @@ alias httpdstop='sudo /etc/init.d/httpd stop'
 alias httpdstart='sudo /etc/init.d/httpd start'
 alias mysqldre='sudo /etc/init.d/mysqld restart'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
+alias scls='screen -ls'
+alias scr='screen -r'
+alias scd='screen -d'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
