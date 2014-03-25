@@ -70,7 +70,7 @@ set backspace=indent,eol,start
 "改行やタブなどの空白を表示する
 set list
 set listchars=tab:->
-hi SpecialKey guibg=NONE guifg=Gray40
+hi SpecialKey guifg=Gray37 ctermfg=59
 augroup HighlightTrailingSpaces
     autocmd!
     autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
