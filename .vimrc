@@ -73,7 +73,7 @@ set listchars=tab:->
 hi SpecialKey guifg=Gray37 ctermfg=59
 augroup HighlightTrailingSpaces
     autocmd!
-    autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+    autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Blue ctermbg=Blue
     autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
 augroup END
 
@@ -140,7 +140,8 @@ endif
 " キーバインドの変更
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
-nmap <F1> :VimFiler
+nmap <F1> :VimFiler -split -simple -winwidth=35
+nmap <F2> :NERDTree
 " スクロール可能にする
 set mouse=a
 " tagsジャンプの時に複数ある時は一覧表示
