@@ -19,10 +19,6 @@ alias gs='git status'
 alias ctags='/usr/bin/ctags'
 alias ctagsmac='/usr/local/Cellar/ctags/5.8/bin/ctags'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
-alias cdquiz='cd ~/marica-quiz'
-alias cdam='cd ~/Desktop/teambio_b/'
-alias sshmy='ssh -A game@gwdev6234.svr.mbga.local'
-alias sshquiz='ssh -A game@gwdev6147'
 alias scls='screen -ls'
 alias scr='screen -r'
 alias scd='screen -d'
@@ -56,3 +52,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# load ext file
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
