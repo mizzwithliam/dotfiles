@@ -60,9 +60,9 @@ set ruler
 set showcmd
 set laststatus=2
 set smartindent
-set expandtab
+"set expandtab
 set ts=4 sw=4 sts=0
-colorscheme hybrid 
+colorscheme hybrid
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,euc-jp,default,latin
 set backspace=indent,eol,start
@@ -70,9 +70,10 @@ set backspace=indent,eol,start
 "改行やタブなどの空白を表示する
 set list
 set listchars=tab:->
+hi SpecialKey guifg=Gray37 ctermfg=59
 augroup HighlightTrailingSpaces
     autocmd!
-    autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+    autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Blue ctermbg=Blue
     autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
 augroup END
 
@@ -139,7 +140,8 @@ endif
 " キーバインドの変更
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
-nmap <F1> :VimFiler
+nmap <F1> :VimFiler -split -simple -winwidth=35
+nmap <F2> :NERDTree
 " スクロール可能にする
 set mouse=a
 " tagsジャンプの時に複数ある時は一覧表示
@@ -148,8 +150,9 @@ nnoremap <C-]> g<C-]>
 " vim-tags
 au BufNewFile,BufRead *.pm let g:vim_tags_project_tags_command = "ctags --languages=php -f ~/pm.tags `pwd` 2>/dev/null &"
 
-" vimfilerを起動時に立ち上げる
-autocmd VimEnter * VimFiler -split -simple -winwidth=30 -no-quit
-"let g:vimfiler_as_default_explorer = 1
+" 外部設定ファイルを読み込む
+if filereadable(expand('~/.vimrc.local'))
+    source ~/.vimrc.local
+endif
 
 filetype plugin indent on

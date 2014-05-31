@@ -57,3 +57,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# load ext file
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
