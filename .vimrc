@@ -141,7 +141,7 @@ endif
 imap <C-j> <ESC>
 vmap <C-j> <ESC>
 nmap <F1> :VimFiler -split -simple -winwidth=35
-nmap <F2> :NERDTree
+nmap <C-i> :NERDTree
 " スクロール可能にする
 set mouse=a
 " tagsジャンプの時に複数ある時は一覧表示

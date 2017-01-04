@@ -16,17 +16,20 @@ alias gaa="git add ."
 alias gc="git commit"
 alias gpu="git push"
 alias gs='git status'
+alias gr='git reset'
+alias gch="git checkout"
 alias ctags='/usr/bin/ctags'
 alias ctagsmac='/usr/local/Cellar/ctags/5.8/bin/ctags'
 alias mvim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/mvim "$@"'
 alias sshghost='ssh -i ghost.pem ec2-user@54.199.138.50'
-alias cdquiz='cd ~/marica-quiz'
-alias cdam='cd ~/Desktop/teambio_b/'
 alias sshmy='ssh -A game@gwdev6234.svr.mbga.local'
 alias sshquiz='ssh -A game@gwdev6147'
 alias scls='screen -ls'
 alias scr='screen -r'
 alias scd='screen -d'
+alias starttpapi='python ./manage.py runserver api.trippiece.local:8080 --settings="trippiece_api.settings_local"'
+alias starttpweb='python ./manage.py runserver api.trippiece.local:8000 --settings="trippiece_api.web.settings_local"'
+ve() { source ~/.virtualenv/$1/bin/activate; }
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -54,9 +57,17 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:$PATH
 export MOBA_DIR=~/mizuhiro-kio/work/mobasif 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # load ext file
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+zstyle ':completion:*' rehash true
+
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/.virtualenvs
